@@ -1,0 +1,42 @@
+.feature-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(25, 118, 210, 0.08);
+  padding: 32px 24px;
+  margin: 16px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-width: 220px;
+  max-width: 320px;
+  flex: 1 1 260px;
+  animation: card-pop 0.8s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.16);
+}
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 18px;
+  color: #1976d2;
+  animation: icon-bounce 1.2s;
+}
+.feature-title {
+  font-size: 1.3rem;
+  color: #1a237e;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.feature-desc {
+  color: #374151;
+  font-size: 1.05rem;
+}
+@keyframes card-pop {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes icon-bounce {
+  0% { transform: translateY(-20px); opacity: 0; }
+  60% { transform: translateY(8px); opacity: 1; }
+  100% { transform: translateY(0); }
+}
