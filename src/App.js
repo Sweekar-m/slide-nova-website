@@ -49,7 +49,7 @@ function App() {
         </section>
         <section className="cta-section">
           <h2 className="cta-title">Ready to Elevate Your Presentations?</h2>
-          <p className="cta-desc">Create beautiful slides quickly and easily with SlideNova..</p>
+          <p className="cta-desc">Create beautiful slides quickly and easily with SlideNova.</p>
           <a className="cta-download-btn" href="/Slide%20Nova.zip" download>Download Slide Nova</a>
         </section>
         <Contact />
